@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+# Source Plugins
+source <(antibody init)
+antibody bundle <$HOME/.dotfiles/zsh/plugins.zsh
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# load all files from .shell/zshrc.d directory
+if [ -d $HOME/.dotfiles/zsh ]; then
+  for file in $HOME/.dotfiles/zsh/*.zsh; do
+    if [[ "$file" == *"plugins.zsh"* ]]; then
+      continue
+    else
+      source $file
+    fi
+  done
+fi
