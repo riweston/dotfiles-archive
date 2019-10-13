@@ -5,6 +5,3 @@ fi
 
 # Source direnv shell hook
 eval "$(direnv hook zsh)"
-
-# Source chezmoi autocompletion
-eval "$(chezmoi completion zsh)"

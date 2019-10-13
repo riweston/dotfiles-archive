@@ -4,6 +4,12 @@
 source <(antibody init)
 antibody bundle <$HOME/.dotfiles/zsh/plugins.zsh
 
+# autocompletion
+autoload -U compinit && compinit
+
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
+
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
