@@ -8,7 +8,8 @@ antibody bundle <$HOME/.dotfiles/zsh/plugins.zsh
 autoload -U compinit && compinit
 
 # To install useful key bindings and fuzzy completion:
-$(brew --prefix)/opt/fzf/install
+#$(brew --prefix)/opt/fzf/install
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
