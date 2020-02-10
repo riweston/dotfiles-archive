@@ -9,7 +9,7 @@ fi
 
 # Source Plugins
 source <(antibody init)
-antibody bundle <$HOME/.dotfiles/zsh/plugins.zsh
+antibody bundle <$HOME/.zshrc.d/plugins.zsh
 
 # autocompletion
 autoload -U compinit && compinit
