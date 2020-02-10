@@ -7,3 +7,4 @@ changyuheng/zsh-interactive-cd
 #athityakumar/colorls
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
+desyncr/vagrant-zsh-completion

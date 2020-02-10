@@ -22,8 +22,8 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # load all files from .shell/zshrc.d directory
-if [ -d $HOME/.dotfiles/zsh ]; then
-  for file in $HOME/.dotfiles/zsh/*.zsh; do
+if [ -d $HOME/.zshrc.d ]; then
+  for file in $HOME/.zshrc.d/*.zsh; do
     if [[ "$file" == *"plugins.zsh"* ]]; then
       continue
     else
