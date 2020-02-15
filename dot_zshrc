@@ -16,6 +16,11 @@ antibody bundle <$HOME/.zshrc.d/plugins.zsh
 # autocompletion
 autoload -U compinit && compinit
 
+# bash autocompletion
+autoload bashcompinit
+bashcompinit
+source /path/to/your/bash_completion_file
+
 # To install useful key bindings and fuzzy completion:
 #$(brew --prefix)/opt/fzf/install
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
