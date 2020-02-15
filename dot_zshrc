@@ -19,7 +19,7 @@ autoload -U compinit && compinit
 # bash autocompletion
 autoload bashcompinit
 bashcompinit
-source /path/to/your/bash_completion_file
+source /usr/local/etc/bash_completion.d/
 
 # To install useful key bindings and fuzzy completion:
 #$(brew --prefix)/opt/fzf/install
