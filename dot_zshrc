@@ -1,21 +1,4 @@
 #!/bin/zsh
-# To customize prompt, run `p10k configure` or edit ~/.zshrc.d/.p10k.zsh.
-[[ ! -f ~/.zshrc.d/.p10k.zsh ]] || source ~/.zshrc.d/.p10k.zsh
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block, everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# Source Plugins
-source <(antibody init)
-antibody bundle <$HOME/.zshrc.d/plugins.zsh
-
-# To install useful key bindings and fuzzy completion:
-#$(brew --prefix)/opt/fzf/install
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # load all files from .shell/zshrc.d directory
 if [ -d $HOME/.zshrc.d ]; then
@@ -27,4 +10,3 @@ if [ -d $HOME/.zshrc.d ]; then
     fi
   done
 fi
-
