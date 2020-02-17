@@ -74,7 +74,9 @@ module.exports = {
     borderColor: "#333",
 
     // custom CSS to embed in the main window
-    css: "",
+    css: `
+      .tab_tab { color: rgba(255, 255, 255, .3) !important; }
+    `,
 
     // custom CSS to embed in the terminal window
     termCSS: "",
