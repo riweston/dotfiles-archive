@@ -13,20 +13,9 @@ fi
 source <(antibody init)
 antibody bundle <$HOME/.zshrc.d/plugins.zsh
 
-# autocompletion
-autoload -U compinit && compinit
-
-# bash autocompletion
-autoload bashcompinit
-bashcompinit
-source /usr/local/etc/bash_completion.d/
-
 # To install useful key bindings and fuzzy completion:
 #$(brew --prefix)/opt/fzf/install
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
 
 # load all files from .shell/zshrc.d directory
 if [ -d $HOME/.zshrc.d ]; then
