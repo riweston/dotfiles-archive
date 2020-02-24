@@ -10,3 +10,5 @@ if [ -d $HOME/.zshrc.d ]; then
     fi
   done
 fi
+
+neofetch

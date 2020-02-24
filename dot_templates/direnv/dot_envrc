@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+set -euo pipefail
+
+#### HELP ####
+: '
+.envrc file for direnv
+https://github.com/direnv/direnv
+
+DIRENV
+$ brew install direnv
+
+You will also need to setup shell hooks adding the following to your profile
+
+ZSH
+eval "$(direnv hook zsh)"
+
+Bash
+eval "$(direnv hook bash)"
+'
+#### HELP ####
+
+# Add /bin functions
+PATH_add bin

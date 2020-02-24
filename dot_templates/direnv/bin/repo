@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# This script is to open the default remote of a repo in your browser
+#
+# -------------------------
+# EXAMPLE EXECUTION
+# $ repo
+#
+
+git remote -v | awk '/origin.*push/ {print $2}' | xargs open
