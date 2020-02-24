@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# This script must be sourced when run to assign to the users
+# environment variables;
+#
+# -------------------------
+# EXAMPLE EXECUTION
+# $ . init $ENVIRONMENT
+# or
+# $ source init $ENVIRONMENT
+#
+# -------------------------
+# EXAMPLE SCRIPT
+# export KVARRAY=(
+# 	CLIENT_ID
+# 	CLIENT_SECRET
+# 	TENANT_ID
+# 	SUBSCRIPTION_ID
+# )
+# for v in "${KVARRAY[@]}"; do
+# 	echo "Getting secret for $v..."
+# 	export $v=$(
+# 		az keyvault secret show --id $(
+# 			az keyvault secret list --vault-name 'AZU-SHDSVCS-UKS1-KV' |
+# 				jq ".[] | select((.contentType==\"$v\") and .tags.subscription==\"$1\") | .id" --raw-output
+# 		) | jq .value --raw-output
+# 	)
+# done
+# echo "Setting IMAGEGALLERY_RG to AZU-BSL-SSVS-$1-RG"
+# export IMAGEGALLERY_RG="AZU-BSL-SSVS-$1-RG"
+# -------------------------
