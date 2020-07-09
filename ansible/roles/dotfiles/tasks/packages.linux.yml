@@ -1,7 +1,4 @@
 ---
-- name: Include vars
-  include_vars: vars/packages.yml
-
 - name: Install packages
   package:
     name: "{{ packages }}"
