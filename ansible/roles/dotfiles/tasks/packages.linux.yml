@@ -1,4 +1,8 @@
 ---
+- name: Print package
+  debug:
+    msg: {{ packages }}
+
 - name: Install packages
   package:
     name: "{{ packages }}"
