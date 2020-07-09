@@ -3,7 +3,6 @@
   git:
     repo: https://github.com/junegunn/fzf.git
     dest: /tmp/fzf
-    mode: 0755
 
 - name: Execute fzf install script
   shell:
