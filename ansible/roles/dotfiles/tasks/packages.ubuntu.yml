@@ -1,0 +1,13 @@
+---
+- name: Download chezmoi install script
+  get_url:
+    url: https://git.io/chezmoi
+    dest: /tmp/chezmoi.sh
+
+- name: Execute chezmoi install script
+  shell: /tmp/chezmoi.sh
+
+- name: Remove chezmoi install script
+  file:
+    path: /tmp/chezmoi.sh
+    state: absent

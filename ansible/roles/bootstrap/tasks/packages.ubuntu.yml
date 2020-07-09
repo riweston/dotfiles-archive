@@ -1,4 +1,0 @@
----
-- name: Install chezmoi
-  shell: curl -sfL https://git.io/chezmoi | sh
-
