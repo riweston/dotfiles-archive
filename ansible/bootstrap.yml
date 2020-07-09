@@ -1,6 +1,4 @@
 ---
 - hosts: localhost
-  vars_files:
-    - "./roles/dotfiles/vars/packages.yml"
   roles:
   - dotfiles
