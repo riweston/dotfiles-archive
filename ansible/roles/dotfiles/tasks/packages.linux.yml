@@ -3,3 +3,4 @@
   package:
     name: "{{ packages }}"
     state: present
+  include_vars: packages.yml
