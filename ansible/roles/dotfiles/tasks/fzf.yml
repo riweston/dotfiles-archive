@@ -1,0 +1,14 @@
+---
+- name: Download fzf install script
+  get_url:
+    url: https://github.com/junegunn/fzf/blob/master/install
+    dest: /tmp/fzf.sh
+    mode: 0755
+
+- name: Execute fzf install script
+  shell: /tmp/fzf.sh --all
+
+- name: Remove fzf install script
+  file:
+    path: /tmp/fzf.sh
+    state: absent
