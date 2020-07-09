@@ -3,6 +3,7 @@
   get_url:
     url: https://git.io/chezmoi
     dest: /tmp/chezmoi.sh
+    mode: 0755
 
 - name: Execute chezmoi install script
   shell: /tmp/chezmoi.sh
