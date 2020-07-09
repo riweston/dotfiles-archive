@@ -6,7 +6,7 @@
     mode: 0755
 
 - name: Execute fzf install script
-  shell: /tmp/fzf.sh --all
+  shell: /tmp/fzf.sh --bin
 
 - name: Remove fzf install script
   file:
