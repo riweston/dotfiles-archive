@@ -11,7 +11,7 @@ steps:
   settings:
     playbook: ansible/bootstrap.yml
     #galaxy: ansible/requirements.yml
-    inventory: ansible/inventory
+    #inventory: ansible/inventory
     private_key:
       from_secret: ansible_private_key
     vault_password:
