@@ -1,2 +1,4 @@
 ---
 # tasks file for dotfiles
+- name: Bootstrap for Ubuntu
+  import_tasks: packages.ubuntu.yml
