@@ -1,4 +1,6 @@
 ---
 # tasks file for dotfiles
-- name: Bootstrap for Ubuntu
-  import_tasks: packages.ubuntu.yml
+- name: Install packages
+  import_tasks: packages.linux.yml
+- name: Install chezmoi
+  import_tasks: chezmoi.yml

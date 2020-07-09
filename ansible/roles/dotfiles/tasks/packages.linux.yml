@@ -1,0 +1,6 @@
+---
+tasks:
+- name: Install packages
+  packages:
+    name: "{{ packages }}"
+    state: present
