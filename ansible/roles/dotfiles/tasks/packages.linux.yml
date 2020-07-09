@@ -1,6 +1,6 @@
 ---
 - name: Include vars
-  include_vars: packages.yml
+  include_vars: vars/packages.yml
 
 - name: Install packages
   package:
