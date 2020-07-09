@@ -10,6 +10,7 @@ steps:
     another_var: foo
   settings:
     playbook: ansible/bootstrap.yml
+    connection: local
     #galaxy: ansible/requirements.yml
     #inventory: ansible/inventory
     private_key:
