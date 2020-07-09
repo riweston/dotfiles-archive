@@ -4,3 +4,5 @@
   import_tasks: packages.linux.yml
 - name: Install chezmoi
   import_tasks: chezmoi.yml
+- name: Install fzf
+  import_tasks: fzf.yml
