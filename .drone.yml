@@ -1,6 +1,7 @@
 kind: pipeline
 name: default
 
+
 steps:
 - name: apply ansible playbook
   image: plugins/ansible:1
